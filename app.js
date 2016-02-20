@@ -1,3 +1,13 @@
+var express = require('express');
+var app = express();
+var bodyParser = require('body-parser');
+var router = express.Router();
+
+var path = require('path');
+
+
+
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('port', process.env.PORT || 5000);
 
